@@ -28,14 +28,14 @@ const wrapper = ({ children }: { children: JSX.Element }) => (
 describe('useSliceHelper', () => {
 
 
-    it('should return', () => {
+    it('should update state values', () => {
 
         const { result } = renderHook(() => useSliceHelper(testSlice), { wrapper })
 
         act(() => {
             result.current.changeVal1()
         })
-        
+
         expect(result.current.testSlice.val1).toBe('newVal1')
 
         act(() => {
