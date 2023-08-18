@@ -7,7 +7,7 @@ type WrappedSlicedMethods<S extends RTKSlice> = {
   ) => void
 }
 
-export const useSliceWrapper = <Slice extends RTKSlice>(slice: Slice) => {
+export const useSliceHelper = <Slice extends RTKSlice>(slice: Slice) => {
   const dispatch = useDispatch()
 
   type SliceName = Slice['name']
@@ -41,4 +41,4 @@ export const useSliceWrapper = <Slice extends RTKSlice>(slice: Slice) => {
   return { ...methods, ...dataOutput }
 }
 
-export default useSliceWrapper
+export default useSliceHelper
