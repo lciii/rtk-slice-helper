@@ -1,5 +1,5 @@
 {
-  "name": "rtk-slice-helper",
+  "name": "@lciii/rtk-slice-helper",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
