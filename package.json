@@ -41,5 +41,23 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "Cut your RTK slice code in half",
+  "main": "index.tsx",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lciii/rtk-slice-helper.git"
+  },
+  "keywords": [
+    "redux",
+    "rtk",
+    "react"
+  ],
+  "author": "Luis Camacho III",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lciii/rtk-slice-helper/issues"
+  },
+  "homepage": "https://github.com/lciii/rtk-slice-helper#readme"
 }
