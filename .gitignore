@@ -3,6 +3,7 @@
 /public
 /src/App.tsx
 /src/index.tsx
+/src/codespace_local/**
 
 # dependencies
 /node_modules
