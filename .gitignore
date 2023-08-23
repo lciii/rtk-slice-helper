@@ -4,6 +4,7 @@
 /src/App.tsx
 /src/index.tsx
 /src/codespace_local/**
+.npmrc
 
 # dependencies
 /node_modules
