@@ -1,13 +1,17 @@
 # rtk-slice-helper
 Cut your RTK slice code in half
 
-## The Problem
-Whenever you want to use your slice in a component, you have to import and use a lot of boilerplate code
+### How to install
+```
+npm i @lciii/rtk-slice-helper
+```
+
+Normally with RTK whenever you want to use your slice in a component, you have to import and use a lot of boilerplate code
 - import useDispatch to dispatch reducer actions
 - import useSelector to select from the store
 - import RootState to safely type the state when selecting
-- instantiating useDispatch and useSelector
-- wrapping every reducer action with dispatch
+- instantiate useDispatch and useSelector
+- wrap every reducer action with dispatch
 ```
 import { RootState } from "store";
 import { useSelector, useDispatch } from "react-redux";
@@ -34,7 +38,7 @@ export const Counter = () => {
 };
 ```
 
-## The Solution
+### The Solution
 Simply pass your slice to useSliceHelper and it returns all the needed data and properties for you!
 
 The properties also all have dispatch() built into them:
@@ -66,7 +70,7 @@ export const Counter = () => {
 };
 ```
 
-## What gets returned?
+### What gets returned?
 An object with the following keys and values:
 - [The name of the slice]: [the current state of that slice]
 - ...[every reducer method of that slice with dispatch built in]:
